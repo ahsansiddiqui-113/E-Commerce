@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Registration</title>
+  <link rel="stylesheet" type="text/css" href="tyles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h1>Login</h1>
+      <form id="login-form">
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button type="submit" onclick="redirectToHomePage()">Login</button>
+        
+  <script>
+    function redirectToHomePage() {
+      window.location.href = "index.html";
+    }
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+  
+        var Username = 'ahsan';
+        var Password = '12345';
+        
+        if (username === 'ahsan' && password === '12345') {
+          window.location.href = 'index.php';
+        } else {
+          console.log('Invalid credentials');
+        }
+      });
+  </script>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h1>Register</h1>
+      <form id="register-form">
+        <input type="text" id="register-username" placeholder="Username" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <input type="password" id="register-confirm-password" placeholder="Confirm Password" required>
+        <button type="submit" onclick="redirectToHomePage()">Register</button>
+        <script>
+            function redirectToHomePage() {
+              window.location.href = "index.html";
+            }
+          </script>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
